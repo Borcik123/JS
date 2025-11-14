@@ -1,0 +1,61 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <script>
+    function AB_zaw() {
+      let aX_zaw = parseFloat(document.getElementById('aX').value);
+      let aY_zaw = parseFloat(document.getElementById('aY').value);
+
+      let bX_zaw = parseFloat(document.getElementById('bX').value);
+      let bY_zaw = parseFloat(document.getElementById('bY').value);
+
+      document.getElementById("answer").innerHTML = "|AB|= "
+        + (Math.sqrt((aX_zaw - bX_zaw) ** 2 + (aY_zaw - bY_zaw) ** 2)).toFixed(2);
+    }
+    function BC_zaw() {
+      let bX_mys = parseFloat(document.getElementById('bX').value);
+      let bY_zaw = parseFloat(document.getElementById('bY').value);
+      let cX_zaw = parseFloat(document.getElementById('cX').value);
+      let cY_zaw = parseFloat(document.getElementById('cY').value);
+
+      document.getElementById("answer").innerHTML = "|BC|= "
+        + (Math.sqrt((cX_zaw - bX_zaw) ** 2 + (cY_zaw - bY_zaw) ** 2)).toFixed(2);
+    }
+
+    function AC_zaw() {
+      let aX_zaw = parseFloat(document.getElementById('aX').value);
+      let aY_zaw = parseFloat(document.getElementById('aY').value);
+      let cX_zaw = parseFloat(document.getElementById('cX').value);
+      let cY_zaw = parseFloat(document.getElementById('cY').value);
+
+      document.getElementById("answer").innerHTML = "|AC|= "
+        + (Math.sqrt((aX_zaw - cX_zaw) ** 2 + (aY_zaw - cY_zaw) ** 2)).toFixed(2);
+    }
+
+  </script>
+
+  Podaj X punktu A: <input type="text" id="aX"><br>
+  Podaj Y punktu A: <input type="text" id="aY"><br>
+  <br>
+  <br>
+  Podaj X punktu B: <input type="text" id="bX"><br>
+  Podaj Y punktu B: <input type="text" id="bY"><br>
+  <br>
+  <br>
+  Podaj X punktu C: <input type="text" id="cX"><br>
+  Podaj Y punktu C: <input type="text" id="cY"><br>
+  <br>
+  <br>
+
+  <input type="button" value="Oblicz AB" onclick="AB_zaw()"><br>
+  <br>
+  <input type="button" value="Oblicz BC" onclick="BC_zaw()"><br>
+  <br>
+  <input type="button" value="Oblicz AC" onclick="AC_zaw()"><br>
+  <br>
+  <br>
+  <div style="color:red;font-size:50px;" id="answer"></div>
+</body>
+</html>
