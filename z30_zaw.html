@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 30</title>
+    <style>
+        body { font-family: sans-serif; margin: 20px; }
+        .box { border: 1px solid #ccc; padding: 15px; margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+    <button onclick="pokazZadanie()">Zadanie</button>
+    <button onclick="pokazKod()">KOD</button>
+
+    <div id="wynik" class="box"></div>
+
+    <script>
+        const telefon = {
+            siec: "Orange",
+            model: "iPhone 15",
+            kolor: "Czarny",
+            Telefon_wyswietl_zawadzki: function() {
+                return "Sieć: " + this.siec + ", Model: " + this.model + ", Kolor: " + this.kolor;
+            }
+        };
+
+        function pokazZadanie() {
+            document.getElementById('wynik').innerHTML = 
+                "Obiekt: Telefon<br>Pola: siec, model, kolor<br>Metoda: Telefon_wyswietl_zawadzki";
+        }
+
+        function pokazKod() {
+            document.getElementById('wynik').innerHTML = 
+                "Nazwa obiektu: Telefon<br>" +
+                "Nazwy pól: siec, model, kolor<br>" +
+                "Nazwa metody: Telefon_wyswietl_zawadzki<br><hr>" +
+                "Wynik: " + telefon.Telefon_wyswietl_zawadzki();
+        }
+    </script>
+
+</body>
+</html>
