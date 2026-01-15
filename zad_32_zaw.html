@@ -1,0 +1,43 @@
+<html>
+<head>
+<script type="text/javascript">
+function Telefon(siec_k, model_k, kolor_k, marka_k) {
+    this.siec = siec_k;
+    this.model = model_k;
+    this.kolor = kolor_k;
+    this.marka = marka_k;
+}
+
+Telefon.prototype.Telefon_wyswietl_Kowalski = function() {
+    document.write("Marka: " + this.marka + ", Model: " + this.model + ", Sieć: " + this.siec + "<br>");
+};
+
+var tel1 = new Telefon("5G", "iPhone 15", "czarny", "Apple");
+var tel2 = new Telefon("LTE", "Galaxy S23", "srebrny", "Samsung");
+var tel3 = new Telefon("5G", "Pixel 8", "miętowy", "Google");
+
+tel1.system = "iOS";
+tel1.telefon_pokaz_Kowalski = function() {
+    alert("System operacyjny: " + this.system);
+};
+
+document.write("<h3>Lista wszystkich telefonów:</h3>");
+tel1.Telefon_wyswietl_Kowalski();
+tel2.Telefon_wyswietl_Kowalski();
+tel3.Telefon_wyswietl_Kowalski();
+
+document.write("<br>Dostęp do właściwości tel1: " + tel1.marka + " " + tel1.model);
+
+tel1.telefon_pokaz_Kowalski();
+</script>
+</head>
+<body>
+<br>
+Programowanie obiektowe - Zadanie 32<br>
+Obiekt: Telefon<br>
+Konstruktor zawiera pola: siec, model, kolor, marka<br>
+Metoda prototypu: Telefon_wyswietl_Kowalski<br>
+Nowe pole (tel1): system<br>
+Nowa metoda (tel1): telefon_pokaz_Kowalski<br>
+</body>
+</html>
