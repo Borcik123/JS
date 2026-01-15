@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+    <h1>1. Główne podejścia („filozofie”) programowania</h1>
+    Wyróżniamy następujące paradygmaty programowania:
+    <ol>
+        <li>Programowanie strukturalne</li>
+        <li>Programowanie obiektowe</li>
+    </ol>
+
+    <h1>2. Charakterystyka paradygmatu programowania strukturalnego</h1>
+    <p>
+        Programowanie strukturalne to styl tworzenia programów polegający na organizowaniu kodu
+        w logiczne procedury oraz bloki, uporządkowane hierarchicznie. Wykorzystuje ono podstawowe
+        struktury sterujące, takie jak instrukcje warunkowe oraz pętle.
+    </p>
+    <p>
+        Zastosowanie tego paradygmatu poprawia przejrzystość kodu i ułatwia jego analizę,
+        stanowiąc wyraźny postęp w porównaniu do chaotycznego „spaghetti code”, które często
+        powstawało przy nadużywaniu instrukcji goto.
+    </p>
+
+    <strong>Podstawowe założenia programowania strukturalnego</strong>
+    <ol>
+        <li>Każdy blok kodu posiada jeden punkt wejścia (dopuszczalne są różne punkty wyjścia),</li>
+        <li>Instrukcje wykonywane są w ściśle określonej kolejności,</li>
+        <li>Stosowanie instrukcji warunkowych (if, if else),</li>
+        <li>Wykorzystywanie pętli (for, while, do while),</li>
+        <li>Ograniczanie użycia instrukcji skoku (goto),</li>
+        <li>Unikanie instrukcji break oraz continue,</li>
+        <li>W podejściu proceduralnym dane i funkcje opisujące obiekt nie są ze sobą bezpośrednio powiązane.</li>
+    </ol>
+
+    <h1>3. Programowanie obiektowe – definicja</h1>
+    <p>
+        Programowanie obiektowe (ang. <em>Object-Oriented Programming – OOP</em>) to metoda
+        tworzenia programów, w której podstawowymi elementami są:
+    </p>
+    <ul>
+        <li>
+            obiekty – tworzone i usuwane przez programistę (np. okno systemu Windows jest obiektem),
+        </li>
+        <li>
+            stan obiektu – czyli dane opisujące obiekt, nazywane w OOP polami (np. rozmiar okna),
+        </li>
+        <li>
+            zachowanie obiektu – zestaw czynności, które obiekt potrafi wykonywać, określanych jako metody
+            (np. metoda zmiany rozmiaru okna).
+        </li>
+    </ul>
+    <p>
+        Program napisany w sposób obiektowy jest więc zbiorem współpracujących ze sobą obiektów,
+        które komunikują się w celu realizacji określonych zadań.
+    </p>
+
+    <h1>4. Dlaczego wykorzystujemy programowanie obiektowe?</h1>
+    <ul>
+        <li>
+            Jest to podejście bardziej intuicyjne, ponieważ nawiązuje do rzeczywistego świata.
+            Podczas projektowania programu odwzorowujemy realne obiekty, np. samochód, opisując
+            jego cechy (marka, kolor, rok produkcji) oraz działania (przyspieszanie, hamowanie).
+            Definicja ta znajduje się w klasie, a sam obiekt powstaje w pamięci na jej podstawie.
+        </li>
+        <li>
+            OOP umożliwia efektywniejsze zarządzanie pamięcią – obiekty, które nie są już potrzebne,
+            mogą zostać usunięte, zwalniając zajmowane zasoby. W programowaniu strukturalnym
+            często wymagało to stosowania dynamicznych struktur danych.
+        </li>
+        <li>
+            Dobrze zaprojektowane i przetestowane klasy mogą być wielokrotnie wykorzystywane
+            przez różnych programistów, co pozwala oszczędzać czas i koszty tworzenia oprogramowania.
+        </li>
+    </ul>
+
+    <h1>5. Wyjaśnienie podstawowych pojęć (krótko)</h1>
+
+    <p><strong>Klasa</strong><br>
+        Szablon (wzorzec), który określa strukturę i zachowanie obiektów. Zawiera definicję pól
+        oraz metod, na podstawie których tworzone są obiekty.
+    </p>
+
+    <p><strong>Obiekt</strong><br>
+        Konkretna instancja klasy istniejąca w programie. Posiada określone właściwości
+        oraz metody umożliwiające wykonywanie operacji na tych danych.
+    </p>
+
+    <p><strong>Właściwość</strong><br>
+        Cecha obiektu opisująca jego stan, np. kolor.
+    </p>
+
+    <p><strong>Metoda</strong><br>
+        Operacja, którą obiekt potrafi wykonać, np. poruszanie się. Jest odpowiednikiem funkcji
+        powiązanej z obiektem.
+    </p>
+
+    <p><strong>Konstruktor</strong><br>
+        Specjalna metoda uruchamiana podczas tworzenia obiektu, służąca do jego inicjalizacji,
+        np. nadania imienia i nazwiska.
+    </p>
+
+    <p><strong>Dziedziczenie</strong><br>
+        Mechanizm pozwalający klasie przejmować pola i metody innej klasy (rodzica), z możliwością
+        rozszerzenia jej o nowe elementy.
+    </p>
+
+    <p><strong>Hermetyzacja</strong><br>
+        Ukrywanie wybranych pól i metod klasy przed dostępem z zewnątrz, co zwiększa bezpieczeństwo
+        i kontrolę nad danymi.
+    </p>
+
+    <p><strong>Polimorfizm</strong><br>
+        Zdolność obiektów do przyjmowania różnych form. Ten sam obiekt lub metoda może zachowywać się
+        inaczej w zależności od sposobu użycia lub przekazanych parametrów.
+    </p>
+
+</body>
+</html>
