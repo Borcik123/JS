@@ -1,0 +1,33 @@
+<html>
+<head>
+<script type="text/javascript">
+var telefon = {
+    siec: '5G',
+    model: 'iPhone 15',
+    kolor: 'czarny',
+    Telefon_wyswietl_zawadzki: function ()
+    {
+        document.write("Sieć: " + this.siec + "<br>Model: " + this.model + "<br>Kolor: " + this.kolor + "<br>");
+    }
+}
+telefon.Telefon_wyswietl_zawadzki();
+telefon.bateria = '95%';
+telefon.telefon_pokaz_zawadzki = function() {
+    alert('Stan baterii: ' + this.bateria);
+}
+telefon.telefon_pokaz_zawadzki();
+</script>
+</head>
+<body>
+<br>
+Programowanie obiektowe. <br>
+Obiekt to Telefon<br>
+Pola:<br>
+siec<br>
+model<br>
+kolor<br>
+metoda: Telefon_wyswietl_zawadzki<br>
+nowe pole to bateria<br>
+nowa metoda to telefon_pokaz_zawadzki();<br>
+</body>
+</html>
