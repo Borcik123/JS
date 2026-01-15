@@ -1,41 +1,26 @@
-<!DOCTYPE html>
-<html lang="pl">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Zadanie 30 - Numer 27</title>
-    <script type="text/javascript">
-        var Telefon = {
-            siec: 'Orange',
-            model: 'iPhone 15',
-            kolor: 'Tytanowy',
-            
-            Telefon_wyswietl_TwojeNazwisko: function() {
-                document.write("Wartości obiektu Telefon:<br>");
-                document.write("Sieć: " + this.siec + "<br>");
-                document.write("Model: " + this.model + "<br>");
-                document.write("Kolor: " + this.kolor + "<br>");
-            }
-        };
-
-        function uruchomKod() {
-            Telefon.Telefon_wyswietl_TwojeNazwisko();
-        }
-    </script>
+<script type="text/javascript">
+var Telefon = {
+    siec: 'Orange',
+    model: 'iPhone 15',
+    kolor: 'czarny',
+    Telefon_wyswietl_zawadzki: function ()
+    {
+        document.write(this.siec + ' ' + this.model + ' ' + this.kolor)
+    }
+}
+Telefon.Telefon_wyswietl_zawadzki();
+</script>
 </head>
 <body>
-
-    <h2>Zadanie 30 - Programowanie Obiektowe</h2>
-    
-    <button onclick="uruchomKod()">Uruchom metodę obiektu Telefon</button>
-
-    <hr>
-
-    <p>
-        <strong>Opis zadania (Nr 27):</strong><br>
-        Obiekt: <b>Telefon</b><br>
-        Pola: <b>siec, model, kolor</b><br>
-        Metoda: <b>Telefon_wyswietl_TwojeNazwisko</b>
-    </p>
-
+<br>
+Programowanie obiektowe. <br>
+Obiekt to Telefon<br>
+Pola:<br>
+siec<br>
+model<br>
+kolor<br>
+metoda: Telefon_wyswietl_zawadzki<br>
 </body>
 </html>
