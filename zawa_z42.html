@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Zawadzki Z42_JS</title>
+</head>
+<body>
+
+<h2>Zadanie 42</h2>
+
+<script>
+var imie_zaw=prompt("Podaj imię:");
+var dl_zaw=imie_zaw.length;
+
+document.write("Długość imienia: "+dl_zaw+"<br><br>");
+
+var nazwisko_zaw=prompt("Podaj nazwisko:");
+var liczba_zaw=nazwisko_zaw.length+20;
+
+if(liczba_zaw>10 && liczba_zaw<=50) {
+	document.write("Liczba należy do przedziału (10;50]<br>");
+} else {
+	document.write("Liczba NIE należy do przedziału<br>");
+}
+
+var dzien_zaw=prompt("Podaj dzień urodzenia:");
+var x_zaw=parseInt(dzien_zaw)+50;
+
+if(x_zaw<100 || x_zaw>=200) {
+	document.write("Liczba należy do (-∞,100) lub [200,+∞)");
+} else {
+	document.write("Liczba NIE należy do tych przedziałów");
+}
+</script>
+
+</body>
+</html>
+<!-- Zawadzki Z42_JS-->
