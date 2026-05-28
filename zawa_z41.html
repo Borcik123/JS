@@ -1,0 +1,89 @@
+<html lang="pl"> 
+<head> 
+ <meta charset="utf-8"><title>Zawadzki Z41_JS</title> 
+ <style>h1 { text-transform: uppercase; }</style> 
+</head> 
+<body> 
+ 
+ <h1>Proste działania</h1> 
+ <label for="a">Podaj pierwszą liczbę:</label> <input type="number" id="a"> <br><br> 
+ <label for="b">Podaj drugą liczbę:</label> <input type="number" id="b"> <br><br> 
+ 
+ <input type="button" value="DODAWANIE" onclick="suma_zaw()"> 
+ <input type="button" value="ODEJMOWANIE" onclick="roznica_zaw()"> 
+ <input type="button" value="MNOŻENIE" onclick="iloczyn_zaw()"> 
+ <input type="button" value="DZIELENIE" onclick="iloraz_zaw()"> 
+ <input type="button" value="TEORIA-Zawadzki" onclick="teoria_zaw()"> 
+ 
+ <div id="wynik" style="margin-top:20px;"></div> 
+ 
+ <script> 
+ 
+function teoria_zaw() { 
+	document.write("<font color=green size=4>pierwsza linia teorii</font><br>");
+	document.write("<font color=red size=4>&lt;label for=&quot;a&quot;&gt;Podaj pierwszą liczbę:&lt;/label&gt;</font><br>");
+	document.write("<font color=green size=4>wytłumaczenie:</font><br>");
+	document.write("<font color=red size=4>tworzy etykietę pola formularza</font><br>");
+}   
+   
+function suma_zaw() { 
+	var a=document.getElementById("a").value; 
+	var b=document.getElementById("b").value; 
+ 
+	if(a==""||b=="") { 
+		document.getElementById("wynik").innerHTML = "Proszę uzupełnić obie liczby."; 
+	} else { 
+		a=parseFloat(a); b=parseFloat(b); 
+		var suma_zaw=a+b; 
+		document.getElementById("wynik").innerHTML = "Wynik działania wynosi: " + suma_zaw.toFixed(2); 
+	} 
+} 
+ 
+function roznica_zaw() { 
+	var a=document.getElementById("a").value; 
+	var b=document.getElementById("b").value; 
+ 
+	if(a==""||b=="") { 
+		document.getElementById("wynik").innerHTML = "Proszę uzupełnić obie liczby."; 
+	} else { 
+		a=parseFloat(a); b=parseFloat(b); 
+		var roznica_zaw=a-b; 
+		document.getElementById("wynik").innerHTML = "Wynik działania wynosi: " + roznica_zaw.toFixed(2); 
+	} 
+}    
+ 
+function iloczyn_zaw() { 
+	var a=document.getElementById("a").value; 
+	var b=document.getElementById("b").value; 
+ 
+	if(a==""||b=="") { 
+		document.getElementById("wynik").innerHTML = "Proszę uzupełnić obie liczby."; 
+	} else { 
+		a=parseFloat(a); b=parseFloat(b); 
+		var iloczyn_zaw=a*b; 
+		document.getElementById("wynik").innerHTML = "Wynik działania wynosi: " + iloczyn_zaw.toFixed(2); 
+	} 
+}    
+ 
+function iloraz_zaw() { 
+	var a=document.getElementById("a").value; 
+	var b=document.getElementById("b").value; 
+ 
+	if(a==""||b=="") { 
+		document.getElementById("wynik").innerHTML = "Proszę uzupełnić obie liczby."; 
+	} else { 
+		a=parseFloat(a); b=parseFloat(b); 
+ 
+		if(b==0) { 
+			document.getElementById("wynik").innerHTML = "Nie wolno dzielić przez zero."; 
+		} else {          
+			var iloraz_zaw=a/b; 
+			document.getElementById("wynik").innerHTML = "Wynik działania wynosi: " + iloraz_zaw.toFixed(2); 
+		} 
+	} 
+} 
+ 
+ </script> 
+</body> 
+</html>
+<!-- Zawadzki Z41_JS-->
